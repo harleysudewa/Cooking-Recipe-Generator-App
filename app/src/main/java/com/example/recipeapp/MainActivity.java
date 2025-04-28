@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void modelCall(String prompt) {
         GenerativeModel gm =
-                new GenerativeModel("gemini-1.5-flash", "AIzaSyBd5IC8FFEhSfOzXixx0BhGVr55SsiKGAk");
+                new GenerativeModel("gemini-1.5-flash", "YOUR_GEMINI_API_KEY");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder().addText(prompt).build();
